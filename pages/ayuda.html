@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/eiffel.png">
+    <link rel="stylesheet" href="../librerias/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>LA PARISINA</title>
 </head>
@@ -12,52 +13,94 @@
     <main>
         <header>
         
-            <nav class="nav">
-                <div class="nav__inicio">
-                    <a href="../index.html" class="nav__vinculo">La Parisina</a>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
+                <div class="container-fluid">
+                  <a class="navbar-brand bordeIco" href="#">La Parisina</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="ayuda.html">Ayuda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catalogo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="micarrito.html">Mi carrito</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                  </div>
                 </div>
-    
-                <div class="nav__carrito versionDesktop">
-                    <a href="micarrito.html" class="nav__vinculo--carrito"><img src="../assets/carrito-blanco.png" alt="mi_carrito"></a>
-                </div>
-    
-                <ul class="nav__otrosVinculos versionDesktop">
-                    <li>
-                        <a href="" class="nav__vinculo">Menu</a>
-                        <ul>
-                            <li><a href="contacto.html" class="nav__vinculo versionDesktop">Contacto</a></li>
-                            <li><a href="catalogo.html" class="nav__vinculo">Catalogo</a></li>
-                            <li><a href="ayuda.html" class="nav__vinculo versionDesktop">Ayuda</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+              </nav>
         </header>
 
     <section id="Ayuda" class="section__ayuda">
         <div>
-        <h2 class="centrado">
-            Ayuda
-        </h2>
 
-        <h3 class="centrado">¿Quienes somos?</h3>
-
-        <h4 class="centrado">
-            Somos "La Parisina", un showroom de ropa nueva o usada. Pase por nuestro local!
-        </h4>
-        <h3 class="centrado">¿Donde estamos?</h3>
-        <iframe class="centrarOtros iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.3364865707621!2d-60.213708770746024!3d-33.33591077835689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76787c59fbfc9%3A0x58210df1fd2691e9!2sAlmafuerte%20230%2C%20San%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636489828846!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <strong>¿Quienes somos?</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Somos "La Parisina", un showroom y tienda de ropa. Pase por nuestro local!</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong>¿A que nos dedicamos?</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Vendemos ropa nueva y usada, en muy buenas condiciones. Para vender tu ropa usada contactate con nosotros.</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>¿Donde estamos?</strong>
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          <iframe class="centrarOtros iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.3364865707621!2d-60.213708770746024!3d-33.33591077835689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76787c59fbfc9%3A0x58210df1fd2691e9!2sAlmafuerte%20230%2C%20San%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636489828846!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        
     </div>
     </section>
     <br>
     
     <footer>
         <nav class="footer__nav">
-            <a class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
-            <a class="nav__vinculoFooter" href="ayuda.html">Ayuda</a>
-            <a class="nav__vinculoFooter" href="contacto.html">Consultas</a>
+            <a id="Instagram" class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
+            <a id="WSP" class="nav__vinculoFooter" href="#">Whatsapp</a>
+            <a id="Twitter" class="nav__vinculoFooter" href="#">Twitter</a>
+            <a id="Facebook" class="nav__vinculoFooter" href="#">Facebook</a>
         </nav>
     </footer>
 </main>
+<script src="../librerias/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

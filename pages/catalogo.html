@@ -5,110 +5,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/eiffel.png">
+    <link rel="stylesheet" href="../librerias/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>LA PARISINA</title>
 </head>
 
-<body class="body" style="font-family: La Parisina;">
+<body class="body">
     <main>
-        <header>
+        <header style="font-family: La Parisina;">
         
-            <nav class="nav">
-                <div class="nav__inicio">
-                    <a href="../index.html" class="nav__vinculo">La Parisina</a>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
+                <div class="container-fluid">
+                  <a class="navbar-brand bordeIco" href="#">La Parisina</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ayuda.html">Ayuda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="catalogo.html">Catalogo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="micarrito.html">Mi carrito</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                  </div>
                 </div>
-    
-                <div class="nav__carrito versionDesktop">
-                    <a href="micarrito.html" class="nav__vinculo--carrito"><img src="../assets/carrito-blanco.png" alt="mi_carrito"></a>
-                </div>
-    
-                <ul class="nav__otrosVinculos versionDesktop">
-                    <li>
-                        <a href="" class="nav__vinculo">Menu</a>
-                        <ul>
-                            <li><a href="contacto.html" class="nav__vinculo versionDesktop">Contacto</a></li>
-                            <li><a href="catalogo.html" class="nav__vinculo">Catalogo</a></li>
-                            <li><a href="ayuda.html" class="nav__vinculo versionDesktop">Ayuda</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+              </nav>
         </header>
     
     <section id="Catalogo" class="section__catalogo">
         <div>
-        <h2 class="centrado">
-            CATALOGO
-        </h2>
-
-            <table cellpadding="4px" class="tab"">
+            <table cellpadding="4px" class="table bg-light" style="color: black;">
                 <tr>
-                    <td><h4>ARTICULO</h4></td>
-                    <td><h4>PRECIO</h4></td>
-                    <td><h4>CONDICION</h4></td>
+                    <th scope="col">#</th>
+                    <th scope="col">ARTICULO</th>
+                    <th scope="col">PRECIO</th>
+                    <th scope="col">CONDICION</th>
                 </tr>
                 <tr>
-                    <td><h5>REMERA AZUL ZARA</h5></td>
-                    <td><h5>$500</h5></td>
-                    <td><h5>USADO</h5></td>
+                    <th scope="col">1</th>
+                    <td>REMERA AZUL ZARA</td>
+                    <td>$500</td>
+                    <td>USADO</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">AÑADIR AL CARRITO</button></td>
                 </tr>
                 <tr>
-                    <td><h5>JEAN AYNOTDEAD</h5></td>
-                    <td><h5>$3000</h5></td>
-                    <td><h5>NUEVO</h5></td>
+                    <th scope="col">2</th>
+                    <td>JEAN AYNOTDEAD</td>
+                    <td>$3000</td>
+                    <td>NUEVO</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">AÑADIR AL CARRITO</button></td>
                 </tr>
                 <tr>
-                    <td><h5>CAMPERA DE CUERO</h5></td>
-                    <td><h5>$15000</h5></td>
-                    <td><h5>NUEVO</h5></td>
+                    <th scope="col">3</th>
+                    <td>CAMPERA DE CUERO</td>
+                    <td>$15000</td>
+                    <td>NUEVO</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">AÑADIR AL CARRITO</button></td>
                 </tr>
                 <tr>
-                    <td><h5>SWEATER ROSA</h5></td>
-                    <td><h5>$900</h5></td>
-                    <td><h5>USADO</h5></td>
+                    <th scope="col">4</th>
+                    <td>SWEATER ROSA</td>
+                    <td>$900</td>
+                    <td>USADO</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">AÑADIR AL CARRITO</button></td>
                 </tr>
                 <tr>
-                    <td><h5>CAMPERA DE JEAN ZARA</h5></td>
-                    <td><h5>$5500</h5></td>
-                    <td><h5>NUEVO</h5></td>
+                    <th scope="col">5</th>
+                    <td>CAMPERA DE JEAN ZARA</td>
+                    <td>$5500</td>
+                    <td>NUEVO</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">AÑADIR AL CARRITO</button></td>
                 </tr>
                 <tr>
-                    <td><h5>CAMPERA DE JEAN ZARA</h5></td>
-                    <td><h5>$2000</h5></td>
-                    <td><h5>USADO</h5></td>
+                    <th scope="col">6</th>
+                    <td>CAMPERA DE JEAN ZARA</td>
+                    <td>$2000</td>
+                    <td>USADO</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">AÑADIR AL CARRITO</button></td>
                 </tr>
                 <tr>
-                    <td><h5>ZAPATOS GUCCI</h5></td>
-                    <td><h5>$1500</h5></td>
-                    <td><h5>USADO</h5></td>
+                    <th scope="col">7</th>
+                    <td>ZAPATOS GUCCI</td>
+                    <td>$1500</td>
+                    <td>USADO</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">AÑADIR AL CARRITO</button></td>
                 </tr>
                 <tr>
-                    <td><h5>POLLERA AMARILLA FOREVER21</h5></td>
-                    <td><h5>$4000</h5></td>
-                    <td><h5>NUEVO</h5></td>
+                    <th scope="col">8</th>
+                    <td>POLLERA AMARILLA FOREVER21</td>
+                    <td>$4000</td>
+                    <td>NUEVO</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">AÑADIR AL CARRITO</button></td>
                 </tr>
                 <tr>
-                    <td><h5>REMERA ROLLING STONES</h5></td>
-                    <td><h5>$1000</h5></td>
-                    <td><h5>NUEVO</h5></td>
+                    <th scope="col">9</th>
+                    <td>REMERA ROLLING STONES</td>
+                    <td>$1000</td>
+                    <td>NUEVO</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">AÑADIR AL CARRITO</button></td>
                 </tr>
                 <tr>
-                    <td><h5>CAMPERA CAZADORA VERDE</h5></td>
-                    <td><h5>$4500</h5></td>
-                    <td><h5>USADO</h5></td>
+                    <th scope="col">10</th>
+                    <td>CAMPERA CAZADORA VERDE</td>
+                    <td>$4500</td>
+                    <td>USADO</td>
+                    <td><button type="button" class="btn btn-primary btn-sm">AÑADIR AL CARRITO</button></td>
                 </tr>
             </table>
         </div>
     </section>
             <br>
     
-        <footer>
-            <nav class="footer__nav">
-                <a class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
-                <a class="nav__vinculoFooter" href="ayuda.html">Ayuda</a>
-                <a class="nav__vinculoFooter" href="contacto.html">Consultas</a>
-            </nav>
-        </footer> 
-    </main>   
+            <footer>
+                <nav class="footer__nav">
+                    <a id="Instagram" class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
+                    <a id="WSP" class="nav__vinculoFooter" href="#">Whatsapp</a>
+                    <a id="Twitter" class="nav__vinculoFooter" href="#">Twitter</a>
+                    <a id="Facebook" class="nav__vinculoFooter" href="#">Facebook</a>
+                </nav>
+            </footer> 
+    </main>
+    <script src="../librerias/bootstrap/js/bootstrap.min.js"></script>   
 </body>
 </html>

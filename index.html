@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/eiffel.png">
-    <link rel="stylesheet" href="librerias/bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="librerias/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>LA PARISINA</title>
 </head>
@@ -14,47 +14,50 @@
     <main>
     <header>
         
-        <nav class="nav">
-            <div class="nav__inicio">
-                <a href="index.html" class="nav__vinculo">La Parisina</a>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
+            <div class="container-fluid">
+              <a class="navbar-brand bordeIco" href="#">La Parisina</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ayuda.html">Ayuda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/catalogo.html">Catalogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/micarrito.html">Mi carrito</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-
-            <div class="nav__otrosVinculos versionMovil">
-                    <a href="pages/catalogo.html" class="nav__vinculo">Catalogo</a>
-                    <a href="pages/micarrito.html" class="nav__vinculo">Mi Carrito</a>
-            </div>
-
-            <div class="nav__carrito versionDesktop">
-                <a href="pages/micarrito.html" class="nav__vinculo--carrito"><img src="assets/carrito-blanco.png" alt="mi_carrito"></a>
-            </div>
-
-            <ul class="nav__otrosVinculos versionDesktop">
-                <li>
-                    <a href="" class="nav__vinculo">Menu</a>
-                    <ul>
-                        <li><a href="pages/contacto.html" class="nav__vinculo versionDesktop">Contacto</a></li>
-                        <li><a href="pages/catalogo.html" class="nav__vinculo">Catalogo</a></li>
-                        <li><a href="pages/ayuda.html" class="nav__vinculo versionDesktop">Ayuda</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+          </nav>
     </header>
     
 
     <section id="Index" class="section__index">
         <div>
-        <h2 class="centrado">
-            Inicio
-        </h2>
         <nav class="section_nav">
             <img id="img1" class="navSection__img" src="assets/Ropa1.PNG" alt="Ver perchero sustentable">
-            <a id="vinculo1" href="pages/catalogo.html" class="vinculosGenerales">
-                <h4 class="textoVinculos">Ver perchero sustentable</h4>
+            <a id="vinculo1" href="pages/catalogo.html" class="vinculosGenerales centrado">
+                <h4><button type="button" class="btn btn-dark">ver perchero sustentable</button></h4>
             </a>
             <img id="img2" class="navSection__img" src="assets/Ropa5.PNG" alt="Ver ofertas de verano">
-            <a id="vinculo2" href="pages/catalogo.html" class="vinculosGenerales">
-                <h4 class="textoVinculos">Ver ofertas de verano</h4>
+            <a id="vinculo2" href="pages/catalogo.html" class="vinculosGenerales centrado">
+                <h4><button type="button" class="btn btn-dark">Ver ofertas de verano</button></h4>
             </a>             
         </nav>
     </div>
@@ -62,9 +65,10 @@
 
     <footer>
         <nav class="footer__nav">
-            <a class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
-            <a class="nav__vinculoFooter" href="pages/ayuda.html">Ayuda</a>
-            <a class="nav__vinculoFooter" href="pages/contacto.html">Consultas</a>
+            <a id="Instagram" class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
+            <a id="WSP" class="nav__vinculoFooter" href="#">Whatsapp</a>
+            <a id="Twitter" class="nav__vinculoFooter" href="#">Twitter</a>
+            <a id="Facebook" class="nav__vinculoFooter" href="#">Facebook</a>
         </nav>
     </footer>
 

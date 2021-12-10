@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/eiffel.png">
+    <link rel="stylesheet" href="../librerias/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>LA PARISINA</title>
 </head>
@@ -14,59 +15,68 @@
     <main>
         <header>
         
-            <nav class="nav">
-                <div class="nav__inicio">
-                    <a href="../index.html" class="nav__vinculo">La Parisina</a>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
+                <div class="container-fluid">
+                  <a class="navbar-brand bordeIco" href="#">La Parisina</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ayuda.html">Ayuda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catalogo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="micarrito.html">Mi carrito</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                  </div>
                 </div>
-    
-                <div class="nav__carrito versionDesktop">
-                    <a href="micarrito.html" class="nav__vinculo--carrito"><img src="../assets/carrito-blanco.png" alt="mi_carrito"></a>
-                </div>
-    
-                <ul class="nav__otrosVinculos versionDesktop">
-                    <li>
-                        <a href="" class="nav__vinculo">Menu</a>
-                        <ul>
-                            <li><a href="contacto.html" class="nav__vinculo versionDesktop">Contacto</a></li>
-                            <li><a href="catalogo.html" class="nav__vinculo">Catalogo</a></li>
-                            <li><a href="ayuda.html" class="nav__vinculo versionDesktop">Ayuda</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+              </nav>
         </header>
 
     <section id="Contacto" class="section__contacto">
-        <div>
-    <h2 class="centrado">
-        Contacto
-    </h2> 
-
+    <div>
     
     <form action="servidor.php" method="post" class="form">
         <h3 id="Titulo">Cualquier consulta que tengas no dudes en preguntar!</h3>
 
-        <div id="Nombre">
-            <label for="nombre"><h4>Nombre*</h4></label>
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre." required>
+        <div id="Nombre" class="centrado">
+            <label for="nombre" class="form-label"><h4>Nombre*</h4></label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre." required class="form-control">
         </div>
         <div id="Apellido">
-            <label for="apellido"><h4>Apellido*</h4></label>
-            <input type="text" name="apellido" placeholder="Ingresa tu apellido." required>
+            <label for="apellido" class="form-label"><h4>Apellido*</h4></label>
+            <input type="text" name="apellido" placeholder="Ingresa tu apellido." required class="form-control">
         </div>
         <div id="Email">
-            <label for="email"><h4>Email*</h4></label>
-            <input type="email" name="email" placeholder="Ingresa tu email." required>
+            <label for="email" class="form-label"><h4>Email*</h4></label>
+            <input type="email" name="email" placeholder="Ingresa tu email." required class="form-control">
         </div>
         <div id="Telefono">
-            <label for="telefono"><h4>Telefono*</h4></label>
-            <input type="text" name="Telefono" placeholder="Ingresa tu telefono." required>
+            <label for="telefono" class="form-label"><h4>Telefono*</h4></label>
+            <input type="text" name="Telefono" placeholder="Ingresa tu telefono." required class="form-control">
         </div>
         <div id="Mensaje">
             <h4 id="comentario">Mensaje</h4>
-            <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar todo">
+            <textarea name="comentario" id="comentario" cols="50" class="form-control" style="height: 60%;"></textarea><br>
+        </div>
+        <div id="Button">
+            <input type="submit" value="Enviar" class="btn btn-primary">
+            <input type="reset" value="Borrar todo" class="btn btn-danger">
         </div>
     </form>
     </div>
@@ -74,11 +84,13 @@
 
     <footer>
         <nav class="footer__nav">
-            <a class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
-            <a class="nav__vinculoFooter" href="ayuda.html">Ayuda</a>
-            <a class="nav__vinculoFooter" href="contacto.html">Consultas</a>
+            <a id="Instagram" class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
+            <a id="WSP" class="nav__vinculoFooter" href="#">Whatsapp</a>
+            <a id="Twitter" class="nav__vinculoFooter" href="#">Twitter</a>
+            <a id="Facebook" class="nav__vinculoFooter" href="#">Facebook</a>
         </nav>
     </footer>
 </main>
+<script src="../librerias/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

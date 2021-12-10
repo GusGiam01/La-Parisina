@@ -34,6 +34,10 @@ header {
     grid-area: header;
 }
 
+.bordeIco {
+    border: white 2px solid;
+}
+
 .nav {
     display: grid;
     grid-template-areas:
@@ -99,6 +103,22 @@ header {
 
 footer {
     grid-area: footer;
+}
+
+footer nav a#Instagram:hover {
+    color: rgb(134, 14, 134);
+}
+
+footer nav a#WSP:hover {
+    color: rgb(0, 189, 31);
+}
+
+footer nav a#Twitter:hover {
+    color: rgb(0, 170, 248);
+}
+
+footer nav a#Facebook:hover {
+    color: rgb(34, 0, 224);
 }
 
 /* Clases de pagina "Index" */
@@ -427,7 +447,8 @@ section#Ayuda {
             "titulo titulo"
             "nombre apellido"
             "email telefono"
-            "mensaje mensaje";
+            "mensaje mensaje"
+            "button button";
         margin: 0 auto;
         text-align: center;
         border-radius: 10px;
@@ -440,26 +461,31 @@ section#Ayuda {
 
     div#Nombre {
         grid-area: nombre;
-        justify-self: end;
+        justify-self: center;
     }
 
     div#Apellido {
         grid-area: apellido;
-        justify-self: start;
+        justify-self: center;
     }
 
     div#Email {
         grid-area: email;
-        justify-self: end;
+        justify-self: center;
     }
 
     div#Telefono {
         grid-area: telefono;
-        justify-self: start;
+        justify-self: center;
     }
 
     div#Mensaje {
         grid-area: mensaje;
+        justify-self: center;
+    }
+
+    div#Button {
+        grid-area: button;
     }
 
     /* Clases de pagina "Carrito" */
