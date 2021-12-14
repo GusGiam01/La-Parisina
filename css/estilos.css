@@ -121,6 +121,10 @@ footer nav a#Facebook:hover {
     color: rgb(34, 0, 224);
 }
 
+.footer__desktop {
+    display: none;
+}
+
 /* Clases de pagina "Index" */
 
 section#Index {
@@ -259,7 +263,6 @@ section#Ayuda {
     margin: 0 auto;
 }
 
-
 @media screen and (min-width:768px) {
 
     main {
@@ -382,6 +385,14 @@ section#Ayuda {
 
     footer {
         grid-area: footer;
+    }
+
+    .footer__desktop {
+        display: inline;
+    }
+
+    .footer__mobile {
+        display: none;
     }
 
     /* Clases de pagina "Index" */

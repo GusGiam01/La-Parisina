@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/eiffel.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="librerias/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>LA PARISINA</title>
@@ -16,14 +17,14 @@
         
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
             <div class="container-fluid">
-              <a class="navbar-brand bordeIco" href="#">La Parisina</a>
+              <a class="navbar-brand bordeIco animate__animated animate__pulse" href="#">La Parisina</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active animate__animated animate__flash" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="pages/ayuda.html">Ayuda</a>
@@ -51,19 +52,32 @@
     <section id="Index" class="section__index">
         <div>
         <nav class="section_nav">
-            <img id="img1" class="navSection__img" src="assets/Ropa1.PNG" alt="Ver perchero sustentable">
+            <img id="img1" class="navSection__img animate__animated animate__backInLeft" src="assets/Ropa1.PNG" alt="Ver perchero sustentable">
             <a id="vinculo1" href="pages/catalogo.html" class="vinculosGenerales centrado">
-                <h4><button type="button" class="btn btn-dark">ver perchero sustentable</button></h4>
+                <h4><button type="button" class="btn btn-dark animate__animated animate__backInLeft">ver perchero sustentable</button></h4>
             </a>
-            <img id="img2" class="navSection__img" src="assets/Ropa5.PNG" alt="Ver ofertas de verano">
+            <img id="img2" class="navSection__img animate__animated animate__backInRight" src="assets/Ropa5.PNG" alt="Ver ofertas de verano">
             <a id="vinculo2" href="pages/catalogo.html" class="vinculosGenerales centrado">
-                <h4><button type="button" class="btn btn-dark">Ver ofertas de verano</button></h4>
+                <h4><button type="button" class="btn btn-dark animate__animated animate__backInRight">Ver ofertas de verano</button></h4>
             </a>             
         </nav>
     </div>
     </section>
 
-    <footer>
+    <footer class="footer__mobile animate__animated animate__shakeX">
+      <nav class="footer__nav">
+        <div>
+          <a id="Instagram" class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
+          <a id="WSP" class="nav__vinculoFooter" href="#">Whatsapp</a>
+        </div>
+        <div>
+          <a id="Twitter" class="nav__vinculoFooter" href="#">Twitter</a>
+          <a id="Facebook" class="nav__vinculoFooter" href="#">Facebook</a>
+        </div>
+      </nav>
+  </footer>
+
+    <footer class="footer__desktop animate__animated animate__shakeX">
         <nav class="footer__nav">
             <a id="Instagram" class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
             <a id="WSP" class="nav__vinculoFooter" href="#">Whatsapp</a>

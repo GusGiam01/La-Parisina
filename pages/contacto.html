@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/eiffel.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../librerias/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>LA PARISINA</title>
@@ -17,7 +18,7 @@
         
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
                 <div class="container-fluid">
-                  <a class="navbar-brand bordeIco" href="#">La Parisina</a>
+                  <a class="navbar-brand bordeIco animate__animated animate__pulse" href="#">La Parisina</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -36,7 +37,7 @@
                         <a class="nav-link" href="micarrito.html">Mi carrito</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                        <a class="nav-link active animate__animated animate__flash" href="contacto.html">Contacto</a>
                       </li>
                     </ul>
                     <form class="d-flex">
@@ -82,7 +83,20 @@
     </div>
     </section>
 
-    <footer>
+    <footer class="footer__mobile animate__animated animate__shakeX">
+      <nav class="footer__nav">
+        <div>
+          <a id="Instagram" class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
+          <a id="WSP" class="nav__vinculoFooter" href="#">Whatsapp</a>
+        </div>
+        <div>
+          <a id="Twitter" class="nav__vinculoFooter" href="#">Twitter</a>
+          <a id="Facebook" class="nav__vinculoFooter" href="#">Facebook</a>
+        </div>
+      </nav>
+  </footer>
+
+    <footer class="footer__desktop animate__animated animate__shakeX">
         <nav class="footer__nav">
             <a id="Instagram" class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
             <a id="WSP" class="nav__vinculoFooter" href="#">Whatsapp</a>
