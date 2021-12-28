@@ -1,3 +1,9 @@
+//variables
+$color-principal: black;
+$color-secundario: white;
+$fondo: grey;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +17,7 @@
 
 /* Body */
 .body {
-    background-color: grey;
+    background-color: $fondo;
     text-decoration: none;
 }
 
@@ -28,7 +34,7 @@ header {
 }
 
 .bordeIco {
-    border: white 2px solid;
+    border: $color-secundario 2px solid;
 }
 
 .nav {
@@ -38,7 +44,7 @@ header {
     grid-template-rows: auto;
     margin: 0 auto;
     align-items: center;
-    background-color: black;
+    background-color: $color-principal;
     height: 4.5rem;
     font-family: "La Parisina";
 }
@@ -57,15 +63,15 @@ header {
 .nav_barraBusqueda {
     align-items: center;
     text-align: center;
-    background-color: white;
-    border: solid 2px gray;
+    background-color: $color-secundario;
+    border: solid 2px $fondo;
     height: 60%;
     margin: 10px;
 }
 
 .nav__vinculo {
-    color: white;
-    border: 2px solid white;
+    color: $color-secundario;
+    border: 2px solid $color-secundario;
     text-decoration: none;
     font-size: 80%;
 }
@@ -80,7 +86,7 @@ header {
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: $color-principal;
     height: 2.5rem;
     font-family: "La Parisina";
 }
@@ -165,7 +171,7 @@ section#Catalogo {
 
 .tab {
     align-items: center;
-    background-color: white;
+    background-color: $color-secundario;
     margin: 0 auto;
 }
 
@@ -184,7 +190,7 @@ section#Contacto {
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
-    border: 2px solid white;
+    border: 2px solid $color-secundario;
 }
 
 .section__contacto {
@@ -232,10 +238,10 @@ section#Ayuda {
 .textoVinculos {
     text-align: center;
     margin: 0 auto;
-    color: black;
+    color: $color-principal;
     display: block;
-    background-color: white;
-    border: 2px solid black;
+    background-color: $color-secundario;
+    border: 2px solid $color-principal;
     width: fit-content;
 }
 
@@ -268,7 +274,7 @@ section#Ayuda {
         margin: 0 auto;
         align-items: center;
         justify-content: center;
-        background-color: black;
+        background-color: $color-principal;
         height: 4.5rem;
         font-family: "La Parisina";
     }
@@ -288,15 +294,15 @@ section#Ayuda {
     .nav_barraBusqueda {
         align-items: center;
         text-align: center;
-        background-color: white;
-        border: solid 2px gray;
+        background-color: $color-secundario;
+        border: solid 2px $fondo;
         height: 60%;
         margin: 10px;
     }
 
     .nav__vinculo {
-        color: white;
-        border: 2px solid white;
+        color: $color-secundario;
+        border: 2px solid $color-secundario;
         text-decoration: none;
         font-size: 125%;
     }
@@ -317,10 +323,10 @@ section#Ayuda {
 
     .nav {
         li a {
-            background-color: black;
+            background-color: $color-principal;
 
             &:hover {
-                background-color: grey;
+                background-color: $color-secundario;
             }
         }
     }
@@ -345,13 +351,13 @@ section#Ayuda {
         margin: 0 auto;
         justify-content: space-around;
         align-items: center;
-        background-color: black;
+        background-color: $color-principal;
         height: 2.5rem;
         font-family: "La Parisina";
     }
 
     .nav__vinculoFooter {
-        color: white;
+        color: $color-secundario;
         text-align: center;
         text-decoration: none;
         font-size: 100%;
@@ -412,7 +418,7 @@ section#Ayuda {
 
     .tab {
         align-items: center;
-        background-color: white;
+        background-color: $color-secundario;
         margin: 0 auto;
     }
 
@@ -427,7 +433,7 @@ section#Ayuda {
         margin: 0 auto;
         text-align: center;
         border-radius: 10px;
-        border: 2px solid white;
+        border: 2px solid $color-secundario;
     }
 
     h3#Titulo {
@@ -490,10 +496,10 @@ section#Ayuda {
     .textoVinculos {
         text-align: center;
         margin: 0 auto;
-        color: black;
+        color: $color-principal;
         display: block;
-        background-color: white;
-        border: 2px solid black;
+        background-color: $color-secundario;
+        border: 2px solid $color-principal;
         width: fit-content;
     }
 

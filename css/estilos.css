@@ -57,7 +57,7 @@ header {
   align-items: center;
   text-align: center;
   background-color: white;
-  border: solid 2px gray;
+  border: solid 2px grey;
   height: 60%;
   margin: 10px;
 }
@@ -288,7 +288,7 @@ section#Ayuda {
     align-items: center;
     text-align: center;
     background-color: white;
-    border: solid 2px gray;
+    border: solid 2px grey;
     height: 60%;
     margin: 10px;
   }
@@ -317,7 +317,7 @@ section#Ayuda {
     background-color: black;
   }
   .nav li a:hover {
-    background-color: grey;
+    background-color: white;
   }
 
   .nav li ul {
