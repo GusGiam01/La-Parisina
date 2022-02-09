@@ -11,9 +11,9 @@
     <title>LA PARISINA</title>
 </head>
 
-<body class="body" style="font-family: La Parisina;">
+<body class="body"  style="font-family: Arial, Helvetica, sans-serif;">
     <main>
-        <header>
+        <header style="font-family: La Parisina;">
         
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
                 <div class="container-fluid">
@@ -48,21 +48,40 @@
               </nav>
         </header>
 
-        <section id="Carrito" class="section__carrito">
-            <div>
-            <h4 class="centrado">
-                -Tu carrito está vacío-
-            </h4>
+        <section id="Carrito" class="section__carrito carrito">
+          <img id="img1" class="img-carrito" src="../assets/catalogo/camisa-lino.jpg" alt="">
+          <img id="img2" class="img-carrito" src="../assets/catalogo/jean-and.jpg" alt="">
+          <img id="img3" class="img-carrito" src="../assets/catalogo/remera-rs.png" alt="">
 
-            <nav>
-                
-                <a href="catalogo.html" class="centrado"><h4><button type="button" class="btn btn-dark">Ir al catalogo</button></h4></a>
+          <div id="desc1">
+            <h4>CAMISA DE LINO</h4>
+            <h5>$5500</h5>
+            <h6>NUEVO</h6>
+          </div>
+          <div id="desc2">
+            <h4>JEAN AZUL</h4>
+            <h5>$3000</h5>
+            <h6>USADO</h6>
+          </div>
+          <div id="desc3">
+            <h4>REMERA R/S</h4>
+            <h5>$1000</h5>
+            <h6>USADO</h6>
+          </div>
+
+          <button id="bot1" type="button" class="btn btn-danger" style="font-family: La Parisina;">Eliminar</button>
+          <button id="bot2" type="button" class="btn btn-danger" style="font-family: La Parisina;">Eliminar</button>
+          <button id="bot3" type="button" class="btn btn-danger" style="font-family: La Parisina;">Eliminar</button>
+
+          <div id="total"><h3><strong>TOTAL: $9500</strong></h3></div>
+
+            <nav id="bot4">
+                <a href="catalogo.html" class="centrado"><h4><button type="button" class="btn btn-dark" style="font-family: La Parisina;">Ir al catalogo</button></h4></a>
             </nav>
-            </div>
         </section>
         <br>
 
-        <footer class="footer__mobile animate__animated animate__shakeX">
+        <footer class="footer__mobile">
           <nav class="footer__nav">
             <div>
               <a id="Instagram" class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
@@ -75,7 +94,7 @@
           </nav>
       </footer>
     
-        <footer class="footer__desktop animate__animated animate__shakeX">
+        <footer class="footer__desktop">
             <nav class="footer__nav">
                 <a id="Instagram" class="nav__vinculoFooter" href="https://www.instagram.com/laparisinaatelier/?hl=es-la">Instagram</a>
                 <a id="WSP" class="nav__vinculoFooter" href="#">Whatsapp</a>

@@ -8,6 +8,7 @@
   font-family: "La Parisina";
   src: url("../assets/Didot.otf");
 }
+
 /* Body */
 .body {
   background-color: grey;
@@ -17,7 +18,7 @@
 main {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header" "section" "footer";
+  grid-template-areas: "header""section""footer";
   grid-template-rows: 4.5rem 1fr 2.5rem;
 }
 
@@ -122,7 +123,7 @@ section#Index {
 
 .section_nav {
   display: grid;
-  grid-template-areas: "img1" "vinculo1" "img2" "vinculo2";
+  grid-template-areas: "img1""vinculo1""img2""vinculo2";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.5fr 1fr 0.5fr;
   justify-content: center;
@@ -162,17 +163,149 @@ section#Catalogo {
   grid-area: section;
 }
 
-.tab {
-  align-items: center;
-  background-color: white;
-  margin: 0 auto;
+.img-catalogo {
+  height: 270px;
+  width: 270px;
+  border: 1px black solid;
 }
 
-.section__catalogo {
-  display: flex;
-  justify-content: center;
+.catalogo {
+  display: grid;
+  grid-template-areas:
+    "ropa1"
+    "desc1"
+    "ropa2"
+    "desc2"
+    "ropa3"
+    "desc3"
+    "ropa4"
+    "desc4"
+    "ropa5"
+    "desc5"
+    "ropa6"
+    "desc6"
+    "ropa7"
+    "desc7"
+    "ropa8"
+    "desc8"
+    "ropa9"
+    "desc9"
+    "ropa10"
+    "desc10";
+  margin: 0 auto;
+  text-align: center;
   align-items: center;
 }
+
+img#ropa1 {
+  grid-area: ropa1;
+  margin: auto;
+}
+
+img#ropa2 {
+  grid-area: ropa2;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa3 {
+  grid-area: ropa3;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa4 {
+  grid-area: ropa4;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa5 {
+  grid-area: ropa5;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa6 {
+  grid-area: ropa6;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa7 {
+  grid-area: ropa7;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa8 {
+  grid-area: ropa8;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa9 {
+  grid-area: ropa9;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa10 {
+  grid-area: ropa10;
+  justify-content: center;
+  margin: auto;
+}
+
+h6#desc1 {
+  grid-area: desc1;
+  justify-content: center;
+}
+
+h6#desc2 {
+  grid-area: desc2;
+  justify-content: center;
+}
+
+h6#desc3 {
+  grid-area: desc3;
+  justify-content: center;
+}
+
+h6#desc4 {
+  grid-area: desc4;
+  justify-content: center;
+}
+
+h6#desc5 {
+  grid-area: desc5;
+  justify-content: center;
+}
+
+h6#desc6 {
+  grid-area: desc6;
+  justify-content: center;
+}
+
+h6#desc7 {
+  grid-area: desc7;
+  justify-content: center;
+}
+
+h6#desc8 {
+  grid-area: desc8;
+  justify-content: center;
+}
+
+h6#desc9 {
+  grid-area: desc9;
+  justify-content: center;
+}
+
+h6#desc10 {
+  grid-area: desc10;
+  justify-content: center;
+}
+
 
 /* Clases de pagina "Contacto" */
 section#Contacto {
@@ -180,10 +313,9 @@ section#Contacto {
 }
 
 .form {
+  padding: 5%;
   margin: 0 auto;
   text-align: center;
-  border-radius: 10px;
-  border: 2px solid white;
 }
 
 .section__contacto {
@@ -202,6 +334,70 @@ section#Carrito {
   align-items: center;
   justify-content: center;
 }
+
+.carrito {
+  display: grid;
+  grid-template-areas:
+    "img1 desc1 bot1"
+    "img2 desc2 bot2"
+    "img3 desc3 bot3"
+    "total total total"
+    "bot4 bot4 bot4";
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+img#img1 {
+  grid-area: img1;
+}
+
+img#img2 {
+  grid-area: img2;
+}
+
+img#img3 {
+  grid-area: img3;
+}
+
+div#desc1 {
+  grid-area: desc1;
+}
+
+div#desc2 {
+  grid-area: desc2;
+}
+
+div#desc3 {
+  grid-area: desc3;
+}
+
+button#bot1 {
+  grid-area: bot1;
+}
+
+button#bot2 {
+  grid-area: bot2;
+}
+
+button#bot3 {
+  grid-area: bot3;
+}
+
+nav#bot4 {
+  grid-area: bot4;
+}
+
+div#total {
+  grid-area: total;
+}
+
+.img-carrito {
+  height: 200px;
+  width: 200px;
+  border: 1px black solid;
+}
+
 
 /* Clases de pagina "Ayuda" */
 section#Ayuda {
@@ -243,11 +439,15 @@ section#Ayuda {
   margin: 0 auto;
 }
 
+.acordion {
+  width: 280px;
+}
+
 @media screen and (min-width: 768px) {
   main {
     display: grid;
     height: 100vh;
-    grid-template-areas: "header" "section" "footer";
+    grid-template-areas: "header""section""footer";
   }
 
   /* Header */
@@ -309,6 +509,7 @@ section#Ayuda {
     list-style: none;
     display: flex;
   }
+
   ul li {
     display: flex;
   }
@@ -316,6 +517,7 @@ section#Ayuda {
   .nav li a {
     background-color: black;
   }
+
   .nav li a:hover {
     background-color: white;
   }
@@ -326,7 +528,7 @@ section#Ayuda {
     min-width: 140px;
   }
 
-  .nav li:hover > ul {
+  .nav li:hover>ul {
     display: block;
   }
 
@@ -371,7 +573,7 @@ section#Ayuda {
 
   .section_nav {
     display: grid;
-    grid-template-areas: "img1 img2" "vinculo1 vinculo2";
+    grid-template-areas: "img1 img2""vinculo1 vinculo2";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     justify-content: center;
@@ -405,10 +607,131 @@ section#Ayuda {
     grid-area: section;
   }
 
-  .tab {
-    align-items: center;
-    background-color: white;
+  .catalogo {
+    display: grid;
+    grid-template-areas:
+      "ropa1 ropa2"
+      "desc1 desc2"
+      "ropa3 ropa4"
+      "desc3 desc4"
+      "ropa5 ropa6"
+      "desc5 desc6"
+      "ropa7 ropa8"
+      "desc7 desc8"
+      "ropa9 ropa10"
+      "desc9 desc10";
     margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  img#ropa1 {
+    grid-area: ropa1;
+    margin: auto;
+  }
+
+  img#ropa2 {
+    grid-area: ropa2;
+    justify-content: center;
+    margin: auto;
+  }
+
+  img#ropa3 {
+    grid-area: ropa3;
+    justify-content: center;
+    margin: auto;
+  }
+
+  img#ropa4 {
+    grid-area: ropa4;
+    justify-content: center;
+    margin: auto;
+  }
+
+  img#ropa5 {
+    grid-area: ropa5;
+    justify-content: center;
+    margin: auto;
+  }
+
+  img#ropa6 {
+    grid-area: ropa6;
+    justify-content: center;
+    margin: auto;
+  }
+
+  img#ropa7 {
+    grid-area: ropa7;
+    justify-content: center;
+    margin: auto;
+  }
+
+  img#ropa8 {
+    grid-area: ropa8;
+    justify-content: center;
+    margin: auto;
+  }
+
+  img#ropa9 {
+    grid-area: ropa9;
+    justify-content: center;
+    margin: auto;
+  }
+
+  img#ropa10 {
+    grid-area: ropa10;
+    justify-content: center;
+    margin: auto;
+  }
+
+  h6#desc1 {
+    grid-area: desc1;
+    justify-content: center;
+  }
+
+  h6#desc2 {
+    grid-area: desc2;
+    justify-content: center;
+  }
+
+  h6#desc3 {
+    grid-area: desc3;
+    justify-content: center;
+  }
+
+  h6#desc4 {
+    grid-area: desc4;
+    justify-content: center;
+  }
+
+  h6#desc5 {
+    grid-area: desc5;
+    justify-content: center;
+  }
+
+  h6#desc6 {
+    grid-area: desc6;
+    justify-content: center;
+  }
+
+  h6#desc7 {
+    grid-area: desc7;
+    justify-content: center;
+  }
+
+  h6#desc8 {
+    grid-area: desc8;
+    justify-content: center;
+  }
+
+  h6#desc9 {
+    grid-area: desc9;
+    justify-content: center;
+  }
+
+  h6#desc10 {
+    grid-area: desc10;
+    justify-content: center;
   }
 
   /* Clases de pagina "Contacto" */
@@ -417,12 +740,15 @@ section#Ayuda {
   }
 
   .form {
+    padding: 5%;
     display: grid;
-    grid-template-areas: "titulo titulo" "nombre apellido" "email telefono" "mensaje mensaje" "button button";
+    grid-template-areas: "titulo titulo""nombre apellido""email telefono""mensaje mensaje""button button""datos datos";
     margin: 0 auto;
     text-align: center;
-    border-radius: 10px;
-    border: 2px solid white;
+  }
+
+  div#Datos {
+    grid-area: datos;
   }
 
   h3#Titulo {
@@ -463,6 +789,69 @@ section#Ayuda {
     grid-area: section;
   }
 
+  .carrito {
+    display: grid;
+    grid-template-areas:
+      "img1 desc1 bot1"
+      "img2 desc2 bot2"
+      "img3 desc3 bot3"
+      "total total total"
+      "bot4 bot4 bot4";
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  img#img1 {
+    grid-area: img1;
+  }
+
+  img#img2 {
+    grid-area: img2;
+  }
+
+  img#img3 {
+    grid-area: img3;
+  }
+
+  div#desc1 {
+    grid-area: desc1;
+  }
+
+  div#desc2 {
+    grid-area: desc2;
+  }
+
+  div#desc3 {
+    grid-area: desc3;
+  }
+
+  button#bot1 {
+    grid-area: bot1;
+  }
+
+  button#bot2 {
+    grid-area: bot2;
+  }
+
+  button#bot3 {
+    grid-area: bot3;
+  }
+
+  nav#bot4 {
+    grid-area: bot4;
+  }
+
+  div#total {
+    grid-area: total;
+  }
+
+  .img-carrito {
+    height: 200px;
+    width: 200px;
+    border: 1px black solid;
+  }
+
   /* Clases de pagina "Ayuda" */
   section#Ayuda {
     grid-area: section;
@@ -497,6 +886,7 @@ section#Ayuda {
     margin: 0 auto;
   }
 }
+
 /*# sourceMappingURL=estilos.scss.map */
 
 /*# sourceMappingURL=estilos.css.map */

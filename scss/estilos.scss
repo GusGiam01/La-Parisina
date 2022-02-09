@@ -1,512 +1,849 @@
-//variables
-$color-principal: black;
-$color-secundario: white;
-$fondo: grey;
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "La Parisina";
-    src: url("../assets/Didot.otf");
+  font-family: "La Parisina";
+  src: url("../assets/Didot.otf");
 }
-
 /* Body */
 .body {
-    background-color: $fondo;
-    text-decoration: none;
+  background-color: grey;
+  text-decoration: none;
 }
 
 main {
-    display: grid;
-    height: 100vh;
-    grid-template-areas: "header""section""footer";
-    grid-template-rows: 4.5rem 1fr 2.5rem;
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "header" "section" "footer";
+  grid-template-rows: 4.5rem 1fr 2.5rem;
 }
 
 /* Header */
 header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .bordeIco {
-    border: $color-secundario 2px solid;
+  border: white 2px solid;
 }
 
 .nav {
-    display: grid;
-    grid-template-areas: "ico catalogo carrito";
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    margin: 0 auto;
-    align-items: center;
-    background-color: $color-principal;
-    height: 4.5rem;
-    font-family: "La Parisina";
+  display: grid;
+  grid-template-areas: "ico catalogo carrito";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  align-items: center;
+  background-color: black;
+  height: 4.5rem;
+  font-family: "La Parisina";
 }
 
 .nav__otrosVinculos {
-    text-align: center;
-    justify-content: space-evenly;
+  text-align: center;
+  justify-content: space-evenly;
 }
 
 .nav__inicio {
-    grid-area: ico;
-    text-align: center;
-    font-size: 80%;
+  grid-area: ico;
+  text-align: center;
+  font-size: 80%;
 }
 
 .nav_barraBusqueda {
-    align-items: center;
-    text-align: center;
-    background-color: $color-secundario;
-    border: solid 2px $fondo;
-    height: 60%;
-    margin: 10px;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border: solid 2px grey;
+  height: 60%;
+  margin: 10px;
 }
 
 .nav__vinculo {
-    color: $color-secundario;
-    border: 2px solid $color-secundario;
-    text-decoration: none;
-    font-size: 80%;
+  color: white;
+  border: 2px solid white;
+  text-decoration: none;
+  font-size: 80%;
 }
 
 .versionDesktop {
-    display: none;
+  display: none;
 }
 
 /* Footer */
 .footer__nav {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-    align-items: center;
-    background-color: $color-principal;
-    height: 2.5rem;
-    font-family: "La Parisina";
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  height: 2.5rem;
+  font-family: "La Parisina";
 }
 
 .nav__vinculoFooter {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 80%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 80%;
 }
 
 footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 footer nav a#Instagram:hover {
-    color: rgb(134, 14, 134);
+  color: #860e86;
 }
 
 footer nav a#WSP:hover {
-    color: rgb(0, 189, 31);
+  color: #00bd1f;
 }
 
 footer nav a#Twitter:hover {
-    color: rgb(0, 170, 248);
+  color: #00aaf8;
 }
 
 footer nav a#Facebook:hover {
-    color: rgb(34, 0, 224);
+  color: #2200e0;
 }
 
 .footer__desktop {
-    display: none;
+  display: none;
 }
 
 /* Clases de pagina "Index" */
 section#Index {
-    grid-area: section;
+  grid-area: section;
 }
 
 .section_nav {
-    display: grid;
-    grid-template-areas: "img1""vinculo1""img2""vinculo2";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr 1fr 0.5fr;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-areas: "img1" "vinculo1" "img2" "vinculo2";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr 1fr 0.5fr;
+  justify-content: center;
+  align-items: center;
 }
 
 img#img1 {
-    grid-area: img1;
+  grid-area: img1;
 }
 
 img#img2 {
-    grid-area: img2;
+  grid-area: img2;
 }
 
 a#vinculo1 {
-    grid-area: vinculo1;
+  grid-area: vinculo1;
 }
 
 a#vinculo2 {
-    grid-area: vinculo2;
+  grid-area: vinculo2;
 }
 
 .navSection__img {
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 20px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
 .section__index {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Clases de pagina "Catalogo" */
 section#Catalogo {
-    grid-area: section;
+  grid-area: section;
 }
 
-.tab {
-    align-items: center;
-    background-color: $color-secundario;
-    margin: 0 auto;
+.img-catalogo {
+  height: 270px;
+  width: 270px;
+  border: 1px black solid;
 }
 
-.section__catalogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.catalogo {
+  display: grid;
+  grid-template-areas: "ropa1" "desc1" "ropa2" "desc2" "ropa3" "desc3" "ropa4" "desc4" "ropa5" "desc5" "ropa6" "desc6" "ropa7" "desc7" "ropa8" "desc8" "ropa9" "desc9" "ropa10" "desc10";
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+img#ropa1 {
+  grid-area: ropa1;
+  margin: auto;
+}
+
+img#ropa2 {
+  grid-area: ropa2;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa3 {
+  grid-area: ropa3;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa4 {
+  grid-area: ropa4;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa5 {
+  grid-area: ropa5;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa6 {
+  grid-area: ropa6;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa7 {
+  grid-area: ropa7;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa8 {
+  grid-area: ropa8;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa9 {
+  grid-area: ropa9;
+  justify-content: center;
+  margin: auto;
+}
+
+img#ropa10 {
+  grid-area: ropa10;
+  justify-content: center;
+  margin: auto;
+}
+
+h6#desc1 {
+  grid-area: desc1;
+  justify-content: center;
+}
+
+h6#desc2 {
+  grid-area: desc2;
+  justify-content: center;
+}
+
+h6#desc3 {
+  grid-area: desc3;
+  justify-content: center;
+}
+
+h6#desc4 {
+  grid-area: desc4;
+  justify-content: center;
+}
+
+h6#desc5 {
+  grid-area: desc5;
+  justify-content: center;
+}
+
+h6#desc6 {
+  grid-area: desc6;
+  justify-content: center;
+}
+
+h6#desc7 {
+  grid-area: desc7;
+  justify-content: center;
+}
+
+h6#desc8 {
+  grid-area: desc8;
+  justify-content: center;
+}
+
+h6#desc9 {
+  grid-area: desc9;
+  justify-content: center;
+}
+
+h6#desc10 {
+  grid-area: desc10;
+  justify-content: center;
 }
 
 /* Clases de pagina "Contacto" */
 section#Contacto {
-    grid-area: section;
+  grid-area: section;
 }
 
 .form {
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid $color-secundario;
+  padding: 5%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .section__contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Clases de pagina "Carrito" */
 section#Carrito {
-    grid-area: section;
+  grid-area: section;
 }
 
 .section__carrito {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrito {
+  display: grid;
+  grid-template-areas: "img1 desc1 bot1" "img2 desc2 bot2" "img3 desc3 bot3" "total total total" "bot4 bot4 bot4";
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+img#img1 {
+  grid-area: img1;
+}
+
+img#img2 {
+  grid-area: img2;
+}
+
+img#img3 {
+  grid-area: img3;
+}
+
+div#desc1 {
+  grid-area: desc1;
+}
+
+div#desc2 {
+  grid-area: desc2;
+}
+
+div#desc3 {
+  grid-area: desc3;
+}
+
+button#bot1 {
+  grid-area: bot1;
+}
+
+button#bot2 {
+  grid-area: bot2;
+}
+
+button#bot3 {
+  grid-area: bot3;
+}
+
+nav#bot4 {
+  grid-area: bot4;
+}
+
+div#total {
+  grid-area: total;
+}
+
+.img-carrito {
+  height: 200px;
+  width: 200px;
+  border: 1px black solid;
 }
 
 /* Clases de pagina "Ayuda" */
 section#Ayuda {
-    grid-area: section;
+  grid-area: section;
 }
 
 .iframe {
-    height: 280px;
-    width: 280px;
+  height: 280px;
+  width: 280px;
 }
 
 .section__ayuda {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Clases Generales */
 .centrado {
-    text-align: center;
+  text-align: center;
 }
 
 .vinculosGenerales {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .textoVinculos {
-    text-align: center;
-    margin: 0 auto;
-    color: $color-principal;
-    display: block;
-    background-color: $color-secundario;
-    border: 2px solid $color-principal;
-    width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  color: black;
+  display: block;
+  background-color: white;
+  border: 2px solid black;
+  width: fit-content;
 }
 
 .centrarOtros {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.acordion {
+  width: 280px;
 }
 
 @media screen and (min-width: 768px) {
-    main {
-        display: grid;
-        height: 100vh;
-        grid-template-areas: "header""section""footer";
-    }
+  main {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header" "section" "footer";
+  }
 
-    /* Header */
-    header {
-        grid-area: header;
-    }
+  /* Header */
+  header {
+    grid-area: header;
+  }
 
-    .versionDesktop {
-        display: inline;
-    }
+  .versionDesktop {
+    display: inline;
+  }
 
-    .nav {
-        display: grid;
-        grid-template-areas: "secciones ico carrito";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        background-color: $color-principal;
-        height: 4.5rem;
-        font-family: "La Parisina";
-    }
+  .nav {
+    display: grid;
+    grid-template-areas: "secciones ico carrito";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 4.5rem;
+    font-family: "La Parisina";
+  }
 
-    .nav__otrosVinculos {
-        grid-area: secciones;
-        text-align: center;
-        justify-content: space-evenly;
-    }
+  .nav__otrosVinculos {
+    grid-area: secciones;
+    text-align: center;
+    justify-content: space-evenly;
+  }
 
-    .nav__inicio {
-        grid-area: ico;
-        text-align: center;
-        font-size: 150%;
-    }
+  .nav__inicio {
+    grid-area: ico;
+    text-align: center;
+    font-size: 150%;
+  }
 
-    .nav_barraBusqueda {
-        align-items: center;
-        text-align: center;
-        background-color: $color-secundario;
-        border: solid 2px $fondo;
-        height: 60%;
-        margin: 10px;
-    }
+  .nav_barraBusqueda {
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: solid 2px grey;
+    height: 60%;
+    margin: 10px;
+  }
 
-    .nav__vinculo {
-        color: $color-secundario;
-        border: 2px solid $color-secundario;
-        text-decoration: none;
-        font-size: 125%;
-    }
+  .nav__vinculo {
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    font-size: 125%;
+  }
 
-    .nav__vinculo--carrito {
-        grid-area: carrito;
-        border: none;
-    }
+  .nav__vinculo--carrito {
+    grid-area: carrito;
+    border: none;
+  }
 
-    ul {
-        list-style: none;
-        display: flex;
+  ul {
+    list-style: none;
+    display: flex;
+  }
 
-        li {
-            display: flex;
-        }
-    }
+  ul li {
+    display: flex;
+  }
 
-    .nav {
-        li a {
-            background-color: $color-principal;
+  .nav li a {
+    background-color: black;
+  }
 
-            &:hover {
-                background-color: $color-secundario;
-            }
-        }
-    }
+  .nav li a:hover {
+    background-color: white;
+  }
 
-    .nav li ul {
-        display: none;
-        position: absolute;
-        min-width: 140px;
-    }
+  .nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+  }
 
-    .nav li:hover>ul {
-        display: block;
-    }
+  .nav li:hover > ul {
+    display: block;
+  }
 
-    .versionMovil {
-        display: none;
-    }
+  .versionMovil {
+    display: none;
+  }
 
-    /* Footer */
-    .footer__nav {
-        display: flex;
-        margin: 0 auto;
-        justify-content: space-around;
-        align-items: center;
-        background-color: $color-principal;
-        height: 2.5rem;
-        font-family: "La Parisina";
-    }
+  /* Footer */
+  .footer__nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 2.5rem;
+    font-family: "La Parisina";
+  }
 
-    .nav__vinculoFooter {
-        color: $color-secundario;
-        text-align: center;
-        text-decoration: none;
-        font-size: 100%;
-    }
+  .nav__vinculoFooter {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+  }
 
-    footer {
-        grid-area: footer;
-    }
+  footer {
+    grid-area: footer;
+  }
 
-    .footer__desktop {
-        display: inline;
-    }
+  .footer__desktop {
+    display: inline;
+  }
 
-    .footer__mobile {
-        display: none;
-    }
+  .footer__mobile {
+    display: none;
+  }
 
-    /* Clases de pagina "Index" */
-    section#Index {
-        grid-area: section;
-    }
+  /* Clases de pagina "Index" */
+  section#Index {
+    grid-area: section;
+  }
 
-    .section_nav {
-        display: grid;
-        grid-template-areas: "img1 img2""vinculo1 vinculo2";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        justify-content: center;
-        align-items: center;
-    }
+  .section_nav {
+    display: grid;
+    grid-template-areas: "img1 img2" "vinculo1 vinculo2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+  }
 
-    img#img1 {
-        grid-area: img1;
-    }
+  img#img1 {
+    grid-area: img1;
+  }
 
-    img#img2 {
-        grid-area: img2;
-    }
+  img#img2 {
+    grid-area: img2;
+  }
 
-    a#vinculo1 {
-        grid-area: vinculo1;
-    }
+  a#vinculo1 {
+    grid-area: vinculo1;
+  }
 
-    a#vinculo2 {
-        grid-area: vinculo2;
-    }
+  a#vinculo2 {
+    grid-area: vinculo2;
+  }
 
-    .navSection__img {
-        width: 75%;
-        margin: 0 auto;
-        border-radius: 20px;
-    }
+  .navSection__img {
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
 
-    /* Clases de pagina "Catalogo" */
-    section#Catalogo {
-        grid-area: section;
-    }
+  /* Clases de pagina "Catalogo" */
+  section#Catalogo {
+    grid-area: section;
+  }
 
-    .tab {
-        align-items: center;
-        background-color: $color-secundario;
-        margin: 0 auto;
-    }
+  .catalogo {
+    display: grid;
+    grid-template-areas: "ropa1 ropa2" "desc1 desc2" "ropa3 ropa4" "desc3 desc4" "ropa5 ropa6" "desc5 desc6" "ropa7 ropa8" "desc7 desc8" "ropa9 ropa10" "desc9 desc10";
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
 
-    /* Clases de pagina "Contacto" */
-    section#Contacto {
-        grid-area: section;
-    }
+  img#ropa1 {
+    grid-area: ropa1;
+    margin: auto;
+  }
 
-    .form {
-        display: grid;
-        grid-template-areas: "titulo titulo""nombre apellido""email telefono""mensaje mensaje""button button";
-        margin: 0 auto;
-        text-align: center;
-        border-radius: 10px;
-        border: 2px solid $color-secundario;
-    }
+  img#ropa2 {
+    grid-area: ropa2;
+    justify-content: center;
+    margin: auto;
+  }
 
-    h3#Titulo {
-        grid-area: titulo;
-    }
+  img#ropa3 {
+    grid-area: ropa3;
+    justify-content: center;
+    margin: auto;
+  }
 
-    div#Nombre {
-        grid-area: nombre;
-        justify-self: center;
-    }
+  img#ropa4 {
+    grid-area: ropa4;
+    justify-content: center;
+    margin: auto;
+  }
 
-    div#Apellido {
-        grid-area: apellido;
-        justify-self: center;
-    }
+  img#ropa5 {
+    grid-area: ropa5;
+    justify-content: center;
+    margin: auto;
+  }
 
-    div#Email {
-        grid-area: email;
-        justify-self: center;
-    }
+  img#ropa6 {
+    grid-area: ropa6;
+    justify-content: center;
+    margin: auto;
+  }
 
-    div#Telefono {
-        grid-area: telefono;
-        justify-self: center;
-    }
+  img#ropa7 {
+    grid-area: ropa7;
+    justify-content: center;
+    margin: auto;
+  }
 
-    div#Mensaje {
-        grid-area: mensaje;
-        justify-self: center;
-    }
+  img#ropa8 {
+    grid-area: ropa8;
+    justify-content: center;
+    margin: auto;
+  }
 
-    div#Button {
-        grid-area: button;
-    }
+  img#ropa9 {
+    grid-area: ropa9;
+    justify-content: center;
+    margin: auto;
+  }
 
-    /* Clases de pagina "Carrito" */
-    section#Carrito {
-        grid-area: section;
-    }
+  img#ropa10 {
+    grid-area: ropa10;
+    justify-content: center;
+    margin: auto;
+  }
 
-    /* Clases de pagina "Ayuda" */
-    section#Ayuda {
-        grid-area: section;
-    }
+  h6#desc1 {
+    grid-area: desc1;
+    justify-content: center;
+  }
 
-    .iframe {
-        height: 500px;
-        width: 500px;
-    }
+  h6#desc2 {
+    grid-area: desc2;
+    justify-content: center;
+  }
 
-    /* Clases Generales */
-    .centrado {
-        text-align: center;
-    }
+  h6#desc3 {
+    grid-area: desc3;
+    justify-content: center;
+  }
 
-    .vinculosGenerales {
-        text-decoration: none;
-    }
+  h6#desc4 {
+    grid-area: desc4;
+    justify-content: center;
+  }
 
-    .textoVinculos {
-        text-align: center;
-        margin: 0 auto;
-        color: $color-principal;
-        display: block;
-        background-color: $color-secundario;
-        border: 2px solid $color-principal;
-        width: fit-content;
-    }
+  h6#desc5 {
+    grid-area: desc5;
+    justify-content: center;
+  }
 
-    .centrarOtros {
-        display: block;
-        margin: 0 auto;
-    }
+  h6#desc6 {
+    grid-area: desc6;
+    justify-content: center;
+  }
+
+  h6#desc7 {
+    grid-area: desc7;
+    justify-content: center;
+  }
+
+  h6#desc8 {
+    grid-area: desc8;
+    justify-content: center;
+  }
+
+  h6#desc9 {
+    grid-area: desc9;
+    justify-content: center;
+  }
+
+  h6#desc10 {
+    grid-area: desc10;
+    justify-content: center;
+  }
+
+  /* Clases de pagina "Contacto" */
+  section#Contacto {
+    grid-area: section;
+  }
+
+  .form {
+    padding: 5%;
+    display: grid;
+    grid-template-areas: "titulo titulo" "nombre apellido" "email telefono" "mensaje mensaje" "button button" "datos datos";
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  div#Datos {
+    grid-area: datos;
+  }
+
+  h3#Titulo {
+    grid-area: titulo;
+  }
+
+  div#Nombre {
+    grid-area: nombre;
+    justify-self: center;
+  }
+
+  div#Apellido {
+    grid-area: apellido;
+    justify-self: center;
+  }
+
+  div#Email {
+    grid-area: email;
+    justify-self: center;
+  }
+
+  div#Telefono {
+    grid-area: telefono;
+    justify-self: center;
+  }
+
+  div#Mensaje {
+    grid-area: mensaje;
+    justify-self: center;
+  }
+
+  div#Button {
+    grid-area: button;
+  }
+
+  /* Clases de pagina "Carrito" */
+  section#Carrito {
+    grid-area: section;
+  }
+
+  .carrito {
+    display: grid;
+    grid-template-areas: "img1 desc1 bot1" "img2 desc2 bot2" "img3 desc3 bot3" "total total total" "bot4 bot4 bot4";
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  img#img1 {
+    grid-area: img1;
+  }
+
+  img#img2 {
+    grid-area: img2;
+  }
+
+  img#img3 {
+    grid-area: img3;
+  }
+
+  div#desc1 {
+    grid-area: desc1;
+  }
+
+  div#desc2 {
+    grid-area: desc2;
+  }
+
+  div#desc3 {
+    grid-area: desc3;
+  }
+
+  button#bot1 {
+    grid-area: bot1;
+  }
+
+  button#bot2 {
+    grid-area: bot2;
+  }
+
+  button#bot3 {
+    grid-area: bot3;
+  }
+
+  nav#bot4 {
+    grid-area: bot4;
+  }
+
+  div#total {
+    grid-area: total;
+  }
+
+  .img-carrito {
+    height: 200px;
+    width: 200px;
+    border: 1px black solid;
+  }
+
+  /* Clases de pagina "Ayuda" */
+  section#Ayuda {
+    grid-area: section;
+  }
+
+  .iframe {
+    height: 500px;
+    width: 500px;
+  }
+
+  /* Clases Generales */
+  .centrado {
+    text-align: center;
+  }
+
+  .vinculosGenerales {
+    text-decoration: none;
+  }
+
+  .textoVinculos {
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    display: block;
+    background-color: white;
+    border: 2px solid black;
+    width: fit-content;
+  }
+
+  .centrarOtros {
+    display: block;
+    margin: 0 auto;
+  }
 }
+/*# sourceMappingURL=estilos.scss.map */
+/*# sourceMappingURL=estilos.css.map */
 
 /*# sourceMappingURL=estilos.scss.map */
